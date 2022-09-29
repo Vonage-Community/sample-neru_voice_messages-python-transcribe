@@ -18,14 +18,9 @@ from nerualpha.providers.state.state import State
 app = FastAPI()
 neru = Neru()
 
-if os.getenv('NERU_CONFIGURATIONS') is None:
-    print("NERU_CONFIGURATIONS environment variable is not set")
-    sys.exit(1)
-
-contact = json.loads(os.getenv('NERU_CONFIGURATIONS'))['contact']
 vonageContact = MessageContact()
-vonageContact.type_ = contact['type']
-vonageContact.number = contact['number']
+vonageContact.type_ = 'sms'
+vonageContact.number = os.getenv('VONAGE_NUMBER')
 
 async def setupListeners():
     try:
