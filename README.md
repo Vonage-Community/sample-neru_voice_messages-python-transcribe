@@ -1,5 +1,7 @@
 # Session Restoration in NeRu using Python with the Voice and Messages API (V1)
 
+## ❗❗❗ **This repo is now deprecated. Check the [Vonage Developer Blog](https://developer.vonage.com/en/blog) for more blog posts and tutorials. For more sample Vonage projects, check the [Vonage Community GitHub repo](https://github.com/Vonage-Community).**
+
 This project shows how to use NeRu sessions to persist context in your application. When you call the number linked to your application, you can leave a message which will be transcribed by the Voice API. Once the call is complete you can text the same number to get your transcript.
 
 ## Receive Inbound SMS Webhooks
